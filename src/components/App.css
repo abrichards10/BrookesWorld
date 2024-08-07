@@ -1,0 +1,320 @@
+
+/* COLOR LIST 
+#6C8DC6 light blue
+#436EB9 dark blue
+#364138 dark green
+#576541 lighter green
+#87A076 light green
+#7D433D Dark brown/ red
+#9C7B59 light brown
+#8B6240 lighter brown
+*/
+
+.full-container {
+  padding-top: 20px;
+  /* background-image: url("assets/ForestBackground.png"); */
+}
+
+:root {
+  --light-bg: #f5f5f5; 
+  --light-text: #582f2a;
+  --light-accent: #87A076; 
+  --dark-bg: #000000; 
+  --dark-text: #f5f5f5;
+  --dark-accent: #576541; 
+
+  --blue: #87A076; /* Blue color for scroll effect */
+  --dark-green: #364138; /* Dark green color for scroll effect */
+
+  --dark-start-bg: #364138; 
+
+}
+
+/* Add this to your App.css */
+
+.full-container {
+  transition: background-color 0.5s ease; /* Smooth transition for background color */
+  background-color: var(--dark-green); /* Default background color */
+}
+
+
+/* Light Mode Styles */
+.light-mode {
+  --dark-green: #364138; /* Adjust for initial light mode background */
+  --blue:  #87A076; /* Adjust for scrolled light mode background */
+  background-color: var(--light-bg);
+  color: var(--light-text);
+}
+
+.light-mode .header, .light-mode .footer {
+  background-color: var(--light-accent);
+}
+
+/* Dark mode */
+.dark-mode {
+  --dark-start-bg: #364138; /* Adjust for initial dark mode background */
+  --dark-bg: #000000; /* Adjust for scrolled dark mode background */
+  background-color: var(--dark-bg);
+  color: var(--dark-text);
+}
+
+.dark-mode .header, .dark-mode .footer {
+  background-color: var(--dark-accent);
+}
+
+.container {
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding: 20px;
+}
+
+.header {
+  margin-left: 50px;
+  margin-top: 20px;
+  margin-right: 50px;
+  border-radius: 20px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding: 20px;
+  color: var(--header-text-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.BrookesWorld {
+  font-size: 100px;
+}
+
+.FirstText {
+  margin: 150px 50px 200px 50px;
+  
+  text-align: center;
+}
+
+.header button {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: var(--text-color);
+  color: var(--background-color);
+}
+
+/* 
+/* Dark Mode Toggle Button Styles */
+.header button {
+  padding: 10px;
+  border: none;
+  border-radius: 50px; /* Rounded border */
+  cursor: pointer;
+  background-color: var(--button-bg-light); /* Light mode background */
+  color: var(--button-text-light); /* Light mode text color */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s, color 0.3s;
+  position: relative;
+  width: 60px; /* Width of the button */
+  height: 30px; /* Height of the button */
+} */
+
+.header button:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--button-text-light); /* Light mode icon color */
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.header button.dark-mode {
+  background-color: var(--button-bg-dark); /* Dark mode background */
+  color: var(--button-text-dark); /* Dark mode text color */
+}
+
+.header button.dark-mode:before {
+  background-color: var(--button-text-dark); /* Dark mode icon color */
+  transform: translateY(-50%) translateX(30px); /* Moves icon to the right */
+}
+
+.header button .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header button .icon.sun {
+  display: none;
+}
+
+.header button.dark-mode .icon.sun {
+  display: flex;
+}
+
+.header button .icon.moon {
+  display: flex;
+}
+
+.header button.dark-mode .icon.moon {
+  display: none;
+}
+
+.header nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.header nav a:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  background-color: var(--footer-background);
+  color: var(--header-text-color);
+  padding: 20px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.footer a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+.footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.gallery {
+  margin-top: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.gallery-item {
+  width: 300px;
+  text-align: center;
+}
+
+.gallery-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-caption {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.carousel-item img {
+  border-radius: 15px; /* Adjust the radius as needed */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add shadow for better visuals */
+}
+
+.carousel-container {
+  width: 100%;
+  max-width: 800px; /* Adjust this value as needed */
+  margin: 0 auto;
+  padding: 20px;
+  background-color: var(--carousel-background);
+}
+
+.carousel-item-custom {
+  height: 400px; /* Set a fixed height */
+  display: flex;
+  align-items: center; /* Center content vertically */
+}
+
+.iphone-image {
+  border-radius: 30px; /* Rounded corners */
+  border: 2px solid #000; /* Border color */
+  object-fit: cover; /* Ensure image fits well within its container */
+  width: 100%;
+  height: 100%; /* Full height of carousel item */
+  max-width: 100%; /* Ensure image doesn't exceed column width */
+}
+
+/* Basic styles */
+.stars-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* Ensure it doesn't interfere with user interactions */
+  overflow: hidden;
+  z-index: 1000; /* Place it on top of other content */
+}
+
+/* Star styles */
+.star {
+  position: absolute;
+  background-color: white;
+  border-radius: 50%;
+  opacity: 0; /* Initially hidden */
+  transform: scale(0); /* Start with small scale */
+  transition: opacity 1s ease-out, transform 1s ease-out; /* Smooth transition */
+}
+
+/* Animation styles */
+.show-stars .star {
+  opacity: 1; /* Show the stars */
+  transform: scale(1); /* Full size */
+}
+
+
+/* Basic styles */
+.grass-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px; /* Adjust height based on your preference */
+  pointer-events: none; /* Ensure it doesn't interfere with user interactions */
+  overflow: hidden;
+  z-index: 1000; /* Place it on top of other content */
+  display: none; /* Initially hidden */
+}
+
+/* Grass styles */
+.grass {
+  position: absolute;
+  bottom: 0;
+  width: 100px; /* Adjust size as needed */
+  height: 100px; /* Adjust size as needed */
+  background: linear-gradient(to top, transparent 50%, #228B22 50%); /* Grass color */
+  transform: rotate(-15deg);
+  opacity: 0; /* Initially hidden */
+  transition: opacity 1s ease-out, transform 1s ease-out; /* Smooth transition */
+}
+
+/* Animation styles */
+.show-grass .grass {
+  opacity: 1; /* Show the grass */
+  transform: rotate(0); /* Full size */
+}
+
+/* Create multiple grass blades */
+.grass-container .grass:nth-child(1) { left: 10%; }
+.grass-container .grass:nth-child(2) { left: 30%; }
+.grass-container .grass:nth-child(3) { left: 50%; }
+.grass-container .grass:nth-child(4) { left: 70%; }
+.grass-container .grass:nth-child(5) { left: 90%; }
+
+/* Add more styles if needed */
