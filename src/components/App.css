@@ -11,37 +11,32 @@
 */
 
 .full-container {
-  padding-top: 20px;
-  /* background-image: url("assets/ForestBackground.png"); */
+  padding-top: 1px;
+  transition: background 0.5s ease; /* Smooth transition for background color */
+  background: var(--light-bg); /* Default background color */
 }
 
 :root {
-  --light-bg: #f5f5f5; 
-  --light-text: #582f2a;
-  --light-accent: #87A076; 
+  --light-bg: #cfd1d2; 
+  --light-text: #2a3b58;
+  --light-accent: #7697a0; 
   --dark-bg: #000000; 
   --dark-text: #f5f5f5;
-  --dark-accent: #576541; 
+  --dark-accent: #415f65; 
 
-  --blue: #87A076; /* Blue color for scroll effect */
-  --dark-green: #364138; /* Dark green color for scroll effect */
+  --blue: #bee4ea; /* Blue color for scroll effect */
+  --dark-green: #363f41; /* Dark green color for scroll effect */
 
-  --dark-start-bg: #364138; 
+  --dark-start-bg: #363f41; 
+  --dark-end-bg: #000000; /* Black */
 
+  --light-start-bg: #ffffff; /* Starting background color for light mode */
+  --light-end-bg: #e0f7fa;
 }
-
-/* Add this to your App.css */
-
-.full-container {
-  transition: background-color 0.5s ease; /* Smooth transition for background color */
-  background-color: var(--dark-green); /* Default background color */
-}
-
 
 /* Light Mode Styles */
 .light-mode {
-  --dark-green: #364138; /* Adjust for initial light mode background */
-  --blue:  #87A076; /* Adjust for scrolled light mode background */
+ 
   background-color: var(--light-bg);
   color: var(--light-text);
 }
@@ -52,8 +47,6 @@
 
 /* Dark mode */
 .dark-mode {
-  --dark-start-bg: #364138; /* Adjust for initial dark mode background */
-  --dark-bg: #000000; /* Adjust for scrolled dark mode background */
   background-color: var(--dark-bg);
   color: var(--dark-text);
 }
@@ -73,7 +66,7 @@
   margin-right: 50px;
   border-radius: 20px;
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  padding: 20px;
+  padding: 10px;
   color: var(--header-text-color);
   display: flex;
   justify-content: space-between;
@@ -84,25 +77,22 @@
   font-size: 100px;
 }
 
-.FirstText {
-  margin: 150px 50px 200px 50px;
-  
-  text-align: center;
+.BrookeNameHeader {
+  color: aliceblue;
+  background-color: #0000004f;
+  border-radius: 20px;
+  padding: 10px;
 }
 
-.header button {
-  padding: 10px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  background-color: var(--text-color);
-  color: var(--background-color);
+.FirstText {
+  margin: 200px 50px 300px 50px;
+  text-align: center;
 }
 
 /* 
 /* Dark Mode Toggle Button Styles */
 .header button {
-  padding: 10px;
+  /* padding: 10px; */
   border: none;
   border-radius: 50px; /* Rounded border */
   cursor: pointer;
@@ -171,55 +161,143 @@
 .header nav a:hover {
   text-decoration: underline;
 }
+/* Add this to your CSS file */
 
 .footer {
-  background-color: var(--footer-background);
-  color: var(--header-text-color);
   padding: 20px;
   text-align: center;
   font-family: 'Roboto', sans-serif;
+  background-color: var(--footer-background);
+  color: var(--footer-text);
 }
 
-.footer a {
-  color: #007BFF;
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* Space between sections */
+}
+
+.contact-info {
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.contact-info a {
+  color: var(--link-color); /* Replace with your link color */
   text-decoration: none;
+  font-size: 16px;
 }
 
-.footer ul {
-  list-style-type: none;
-  padding: 0;
+.contact-info a:hover {
+  text-decoration: underline;
 }
 
-.footer li {
-  display: inline;
+.socials {
+  display: flex;
+  gap: 20px;
+}
+
+.social-link {
+  color: var(--link-color); /* Replace with your link color */
+  transition: color 0.3s;
+}
+
+.social-link:hover {
+  color: var(--hover-link-color); /* Replace with hover color */
+}
+
+.quick-links {
+  margin-bottom: 20px;
+}
+
+.quick-links a {
+  color: var(--link-color); /* Replace with your link color */
+  text-decoration: none;
   margin: 0 10px;
 }
 
+.quick-links a:hover {
+  text-decoration: underline;
+}
+
+
+.copyright {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
 .gallery {
-  margin-top: 300px;
+  position: relative; /* Ensure positioning context for z-index */
+  z-index: 2;
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-  padding: 20px;
+  gap: 16px; /* Space between gallery items */
+  justify-content: center; /* Center the gallery items */
+  margin-bottom: 300px;
 }
 
 .gallery-item {
-  width: 300px;
-  text-align: center;
+  position: relative;
+  overflow: hidden; /* Ensure content doesn't overflow */
+  flex: 1 1 calc(33% - 16px); /* Adjust the width of items */
+  box-sizing: border-box;
+  max-width: 300px; /* Adjust based on your needs */
+  border-radius: 8px;
+  transition: transform 0.6s ease; /* Smooth transition for the turn effect */
+}
+
+.gallery-image-container {
+  position: relative;
+  width: 100%;
+  height: 200px; /* Fixed height */
+  overflow: hidden; /* Ensure content doesn't overflow */
 }
 
 .gallery-image {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover; /* Ensure images cover the space without distortion */
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.6s ease, opacity 0.3s ease; /* Smooth transition for the turn effect */
+}
+
+.gallery-item:hover .gallery-image {
+  transform: rotateY(180deg); /* Turn the image */
+  opacity: 0; /* Hide the image on hover */
+}
+
+.gallery-summary {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease; /* Smooth transition for the summary */
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+.gallery-item:hover .gallery-summary {
+  opacity: 1; /* Show the summary on hover */
 }
 
 .gallery-caption {
-  margin-top: 10px;
-  font-size: 16px;
-  font-weight: bold;
+  text-align: center;
+  margin-top: 8px;
+  color: white; /* Color for the text in dark overlay */
 }
 
 .carousel-item img {
@@ -230,15 +308,29 @@
 .carousel-container {
   width: 100%;
   max-width: 800px; /* Adjust this value as needed */
-  margin: 0 auto;
+  margin: 300px auto;
   padding: 20px;
   background-color: var(--carousel-background);
 }
 
 .carousel-item-custom {
-  height: 400px; /* Set a fixed height */
+  height: 100vh; /* Full viewport height or any specific height */
   display: flex;
-  align-items: center; /* Center content vertically */
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden; /* Ensure the images don't overflow the container */
+}
+
+.carousel-item-custom img {
+  width: 100%;
+  height: auto; /* Adjust height according to content */
+  object-fit: contain; /* Or use `cover` if you want to fill the space */
+}
+
+.titles { 
+  text-align: center;
+  margin-bottom: 24px;
 }
 
 .iphone-image {
@@ -252,6 +344,7 @@
 
 /* Basic styles */
 .stars-container {
+  z-index: -1; /* Place it behind other content */
   position: fixed;
   top: 0;
   left: 0;
@@ -276,45 +369,42 @@
 .show-stars .star {
   opacity: 1; /* Show the stars */
   transform: scale(1); /* Full size */
-}
+}/* src/components/CloudsAnimation.css */
+/* src/components/CloudsAnimation.css */
 
-
-/* Basic styles */
-.grass-container {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100px; /* Adjust height based on your preference */
-  pointer-events: none; /* Ensure it doesn't interfere with user interactions */
-  overflow: hidden;
-  z-index: 1000; /* Place it on top of other content */
-  display: none; /* Initially hidden */
-}
-
-/* Grass styles */
-.grass {
+.clouds-background {
   position: absolute;
-  bottom: 0;
-  width: 100px; /* Adjust size as needed */
-  height: 100px; /* Adjust size as needed */
-  background: linear-gradient(to top, transparent 50%, #228B22 50%); /* Grass color */
-  transform: rotate(-15deg);
-  opacity: 0; /* Initially hidden */
-  transition: opacity 1s ease-out, transform 1s ease-out; /* Smooth transition */
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none; /* Prevent interaction with clouds */
+  overflow: hidden; /* Ensure clouds don't overflow the container */
+  z-index: .5; /* Place it behind other content */
 }
 
-/* Animation styles */
-.show-grass .grass {
-  opacity: 1; /* Show the grass */
-  transform: rotate(0); /* Full size */
+.cloud {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  opacity: 0.8;
+  animation: cloudMove 60s linear infinite;
 }
 
-/* Create multiple grass blades */
-.grass-container .grass:nth-child(1) { left: 10%; }
-.grass-container .grass:nth-child(2) { left: 30%; }
-.grass-container .grass:nth-child(3) { left: 50%; }
-.grass-container .grass:nth-child(4) { left: 70%; }
-.grass-container .grass:nth-child(5) { left: 90%; }
+.cloud-1 { width: 150px; height: 100px; top: 10%; left: 5%; }
+.cloud-2 { width: 180px; height: 120px; top: 20%; left: 25%; }
+.cloud-3 { width: 200px; height: 130px; top: 40%; left: 35%; }
+.cloud-4 { width: 170px; height: 110px; top: 60%; left: 50%; }
+.cloud-5 { width: 220px; height: 140px; top: 25%; left: 70%; }
+.cloud-6 { width: 160px; height: 100px; top: 50%; left: 80%; }
+.cloud-7 { width: 200px; height: 120px; top: 70%; left: 10%; }
+.cloud-8 { width: 180px; height: 130px; top: 30%; left: 40%; }
+.cloud-9 { width: 190px; height: 110px; top: 55%; left: 60%; }
+.cloud-10 { width: 210px; height: 140px; top: 80%; left: 30%; }
 
-/* Add more styles if needed */
+@keyframes cloudMove {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+
