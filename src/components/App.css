@@ -280,7 +280,6 @@
 .gallery-item {
   width: 300px; /* Fixed width for each item */
   height: 400px; /* Fixed height for each item */
-  border: 1px solid #ddd; /* Optional: add a border */
   position: relative;
   overflow: hidden; 
   flex: 1 1 calc(33% - 16px);
