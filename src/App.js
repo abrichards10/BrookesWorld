@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
@@ -94,24 +93,22 @@ const App = () => {
   }, [isDarkMode]);
 
   return (
-    <Router basename={process.env.PUBLIC_URL}>
-      <div
-        className={isDarkMode ? "dark-mode" : "light-mode"}
-        style={{ position: "relative", overflow: "hidden" }}
-      >
-        {showClouds && !isDarkMode && <CloudsAnimation />}
-        {isDarkMode && <StarsAnimation />}
-        <div className="full-container" style={{ backgroundColor }}>
-          <Header toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode} />
-          <div className="container">
-            <Home />
-            <CarouselComponent />
-            <Gallery />
-          </div>
-          <Footer />
+    <div
+      className={isDarkMode ? "dark-mode" : "light-mode"}
+      style={{ position: "relative", overflow: "hidden" }}
+    >
+      {showClouds && !isDarkMode && <CloudsAnimation />}
+      {isDarkMode && <StarsAnimation />}
+      <div className="full-container" style={{ backgroundColor }}>
+        <Header toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode} />
+        <div className="container">
+          <Home />
+          <CarouselComponent />
+          <Gallery />
         </div>
+        <Footer />
       </div>
-    </Router>
+    </div>
   );
 };
 
