@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/brookes-world/static/css/main.9f64241a.css",
-    "main.js": "/brookes-world/static/js/main.85a45f9a.js",
+    "main.css": "/brookes-world/static/css/main.68569e5f.css",
+    "main.js": "/brookes-world/static/js/main.053bac5f.js",
     "static/js/453.e86647f6.chunk.js": "/brookes-world/static/js/453.e86647f6.chunk.js",
+    "static/media/BrookeLook.jpeg": "/brookes-world/static/media/BrookeLook.3c90f992f189e70bace9.jpeg",
     "static/media/Pocket_Python2.gif": "/brookes-world/static/media/Pocket_Python2.cfdb39beb88f1a1726e5.gif",
     "static/media/Pocket_Python1.gif": "/brookes-world/static/media/Pocket_Python1.786df583afb4c4b3b8f0.gif",
     "static/media/Witches2.png": "/brookes-world/static/media/Witches2.4344661db551ebf4847f.png",
@@ -21,12 +22,12 @@
     "static/media/seo-logo.png": "/brookes-world/static/media/seo-logo.f07023be9f132e5711a6.png",
     "static/media/MissionBitLogo.png": "/brookes-world/static/media/MissionBitLogo.d30748ae3a7ece6dd94f.png",
     "index.html": "/brookes-world/index.html",
-    "main.9f64241a.css.map": "/brookes-world/static/css/main.9f64241a.css.map",
-    "main.85a45f9a.js.map": "/brookes-world/static/js/main.85a45f9a.js.map",
+    "main.68569e5f.css.map": "/brookes-world/static/css/main.68569e5f.css.map",
+    "main.053bac5f.js.map": "/brookes-world/static/js/main.053bac5f.js.map",
     "453.e86647f6.chunk.js.map": "/brookes-world/static/js/453.e86647f6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9f64241a.css",
-    "static/js/main.85a45f9a.js"
+    "static/css/main.68569e5f.css",
+    "static/js/main.053bac5f.js"
   ]
 }
