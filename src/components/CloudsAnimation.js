@@ -1,21 +1,24 @@
-// src/components/CloudsAnimation.js
+// src/components/Clouds.js
 
 import React from "react";
 import "./App.css";
 
+const Cloud = () => (
+  <div className="cloud">
+    <div className="circle circle1"></div>
+    <div className="circle circle2"></div>
+    <div className="circle circle3"></div>
+    <div className="circle circle4"></div>
+    <div className="circle circle5"></div>
+  </div>
+);
+
 const CloudsAnimation = () => {
   return (
-    <div className="clouds-background">
-      <div className="cloud cloud-1"></div>
-      <div className="cloud cloud-2"></div>
-      <div className="cloud cloud-3"></div>
-      <div className="cloud cloud-4"></div>
-      <div className="cloud cloud-5"></div>
-      <div className="cloud cloud-6"></div>
-      <div className="cloud cloud-7"></div>
-      <div className="cloud cloud-8"></div>
-      <div className="cloud cloud-9"></div>
-      <div className="cloud cloud-10"></div>
+    <div className="clouds-container">
+      {Array.from({ length: 10 }).map((_, index) => (
+        <Cloud key={index} />
+      ))}
     </div>
   );
 };

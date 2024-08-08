@@ -32,7 +32,6 @@ const Footer = ({ darkMode }) => {
               </a>
             </p>
           </div>
-
           <div className="copyright">
             <p>
               &copy; {new Date().getFullYear()} Brooke Richards. All rights
@@ -40,7 +39,6 @@ const Footer = ({ darkMode }) => {
             </p>
           </div>
         </div>
-
         <div className="footer-websites ">
           <ul>
             <li>
@@ -49,7 +47,7 @@ const Footer = ({ darkMode }) => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <div class="links">
+                <div className="links">
                   {" "}
                   Typelit —&gt; Practice typing out whole books
                 </div>
@@ -57,7 +55,7 @@ const Footer = ({ darkMode }) => {
             </li>
             <li>
               <a href="websim.ai" target="_blank" rel="noopener noreferrer">
-                <div class="links">
+                <div className="links">
                   Websim.ai —&gt; Can create cool website templates from an AI
                   generated prompt 👀
                 </div>
@@ -70,7 +68,7 @@ const Footer = ({ darkMode }) => {
                 rel="noopener noreferrer"
               >
                 {" "}
-                <div class="links">Excalidraw —&gt; Draw stuff</div>
+                <div className="links">Excalidraw —&gt; Draw stuff</div>
               </a>
             </li>
           </ul>

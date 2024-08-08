@@ -59,7 +59,7 @@ const projects = [
 
 const Gallery = () => {
   return (
-    <div class="gallery-container">
+    <div className="gallery-container">
       <h3 className="titles">Side Projects</h3>
       <div className="gallery">
         {projects.map((project, index) => (

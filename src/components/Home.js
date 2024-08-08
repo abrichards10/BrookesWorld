@@ -3,13 +3,13 @@ import { motion } from "framer-motion";
 
 const Home = () => {
   return (
-    <div class="FirstText">
+    <div className="FirstText">
       <motion.h1
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 2 }}
       >
-        <div class="BrookesWorld">Brooke's World</div>
+        <div className="BrookesWorld">Brooke's World</div>
       </motion.h1>
       <motion.h2
         initial={{ opacity: 0 }}
