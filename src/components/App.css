@@ -62,6 +62,11 @@
   background-color: var(--dark-accent);
 }
 
+.dark-mode .footer {
+  background-color: white;
+  opacity: .7;
+}
+
 .container {
   font-family: 'Courier New', Courier, monospace;
   padding: 20px;
@@ -126,6 +131,8 @@
 }
 
 .footer { /*Footer style*/
+  margin: 50px;
+  border-radius: 20px;
   padding: 20px;
   background-color: #e0f5ff; /* Adjust based on your theme */
 }
@@ -358,8 +365,6 @@
   z-index: 0; 
 }
 
-/* src/components/Clouds.css */
-
 .clouds-container {
   position: absolute;
   width: 100%;
@@ -468,7 +473,6 @@
   }
 }
 
-
 .links {
   color: rgb(110, 110, 110);
 }
@@ -512,28 +516,99 @@
   justify-content: center;
 }
 
-.company {
-  flex: 1 1 200px;
-  max-width: 300px;
+.company-card {
+  position: relative;
+  width: 300px;
+  height: 450px; /* Initial height */
+  overflow: hidden; /* Prevent overflow initially */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 1s ease, height 1s ease; /* Smooth transition for scaling */
+}
+
+.company-card:hover {
+  z-index: 10;
+  transform: scale(1.1); /* Scale up on hover */
+  height: auto; /* Allow height to adjust based on content */
+}
+
+.card-back {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 20px; /* Add padding if needed */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.6s ease; /* Smooth transition for fading */
+}
+
+.card-front {
+  /* background-color: #fff; */
+  padding: 20px;
+  display: flex;
+  gap: 30px;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.2);
-  padding: 15px;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  z-index: 2; /* Ensure front card is above back card */
+}
+
+.card-front img {
+  width: 150px;
+  height: auto;
   border-radius: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-back {
+  /* background-color: #f9f9f9; */
+  top: 0;
+  left: 0;
+  opacity: 0; /* Hide back card initially */
+  z-index: 1; /* Ensure back card is below front card */
+}
+
+.company-card:hover .card-front {
+  opacity: 0; /* Hide the front face on hover */
+}
+
+.company-card:hover .card-back {
+  opacity: 1; /* Show the back face on hover */
+}
+
+.company-logo,
+.testimonial-content {
+  /* position: absolute; */
+  width: 100%;
+  height: 100%;
 }
 
 .company-logo {
-  width: 100%;
-  max-width: 150px;
-  height: auto;
-  margin-bottom: 10px;
+  max-width: 80%;
+  max-height: 80%;
 }
 
-.testimonial {
-  font-style: italic;
+.Companiestext {
+  padding-bottom: 20px;
 }
 
-/* src/components/IntroSection.css */
+.testimonial-image {
+  max-width: 70%;
+  border-radius: 50%; /* Optional: For circular images */
+}
+
+.testimonial-title {
+  text-align: center;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.testimonial-text {
+  font-size: small;
+  text-align: center;
+}
 
 .intro-section {
   width: 50vw; 

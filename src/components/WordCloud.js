@@ -20,25 +20,24 @@ const texts = [
 ];
 const options = {
   radius: 200,
-  // animation speed
-  // slow, normal, fast
   maxSpeed: "fast",
   initSpeed: "fast",
-  // 0 = top
-  // 90 = left
-  // 135 = right-bottom
   direction: 135,
-  // interact with cursor move on mouse out
   keep: true,
 };
 
 const WordCloud = () => {
   useEffect(() => {
-    try {
-      TagCloud(container, texts, options);
-    } catch (error) {
-      console.error("TagCloud error:", error);
-    }
+    // Initialize TagCloud
+    const tagCloudInstance = TagCloud(container, texts, options);
+
+    // Cleanup function to remove the TagCloud instance
+    return () => {
+      // Assuming `TagCloud` exposes a method to remove or destroy instances
+      if (tagCloudInstance && typeof tagCloudInstance.destroy === "function") {
+        tagCloudInstance.destroy();
+      }
+    };
   }, []);
 
   return (

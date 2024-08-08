@@ -40,6 +40,7 @@ const Footer = ({ darkMode }) => {
           </div>
         </div>
         <div className="footer-websites ">
+          Cool Websites:
           <ul>
             <li>
               <a
