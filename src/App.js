@@ -18,7 +18,6 @@ const App = () => {
     const newMode = !isDarkMode;
     setIsDarkMode(newMode);
     setShowClouds(false); // Reset clouds on dark mode change
-
     if (newMode) {
       setBgColor("var(--dark-start-bg)");
     } else {
