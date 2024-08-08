@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/BrookesWorld/src/index.js/static/css/main.35006200.css",
+    "main.js": "/BrookesWorld/src/index.js/static/js/main.1bd2bb65.js",
+    "static/js/453.e86647f6.chunk.js": "/BrookesWorld/src/index.js/static/js/453.e86647f6.chunk.js",
+    "static/media/Pocket_Python2.gif": "/BrookesWorld/src/index.js/static/media/Pocket_Python2.cfdb39beb88f1a1726e5.gif",
+    "static/media/Pocket_Python1.gif": "/BrookesWorld/src/index.js/static/media/Pocket_Python1.786df583afb4c4b3b8f0.gif",
+    "static/media/Witches2.png": "/BrookesWorld/src/index.js/static/media/Witches2.4344661db551ebf4847f.png",
+    "static/media/Pocket_Python3.gif": "/BrookesWorld/src/index.js/static/media/Pocket_Python3.e5f28f85f1b41b4d475f.gif",
+    "static/media/Witches1.png": "/BrookesWorld/src/index.js/static/media/Witches1.1a148e812cb3468933e5.png",
+    "static/media/SideProject2.jpg": "/BrookesWorld/src/index.js/static/media/SideProject2.4d1349ea93b86869c3e2.jpg",
+    "static/media/SideProject1.jpg": "/BrookesWorld/src/index.js/static/media/SideProject1.79bb11577d147ce0c61f.jpg",
+    "static/media/Career_Chatter1.png": "/BrookesWorld/src/index.js/static/media/Career_Chatter1.f99534f02d2d4d153a73.png",
+    "static/media/SideProject5.png": "/BrookesWorld/src/index.js/static/media/SideProject5.3047cf2c676676df88ba.png",
+    "static/media/SideProject6.jpg": "/BrookesWorld/src/index.js/static/media/SideProject6.b1a503aae8d15b387674.jpg",
+    "static/media/Career_Chatter2.png": "/BrookesWorld/src/index.js/static/media/Career_Chatter2.c4d29f7b2a846902b4f9.png",
+    "static/media/Career_Chatter3.png": "/BrookesWorld/src/index.js/static/media/Career_Chatter3.85dc75c84e126d0c78e1.png",
+    "static/media/SideProject4.jpg": "/BrookesWorld/src/index.js/static/media/SideProject4.4959e6a26b6f15d46f80.jpg",
+    "static/media/SideProject3.png": "/BrookesWorld/src/index.js/static/media/SideProject3.6b5457d637d5221691f7.png",
+    "index.html": "/BrookesWorld/src/index.js/index.html",
+    "main.35006200.css.map": "/BrookesWorld/src/index.js/static/css/main.35006200.css.map",
+    "main.1bd2bb65.js.map": "/BrookesWorld/src/index.js/static/js/main.1bd2bb65.js.map",
+    "453.e86647f6.chunk.js.map": "/BrookesWorld/src/index.js/static/js/453.e86647f6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.35006200.css",
+    "static/js/main.1bd2bb65.js"
+  ]
+}
