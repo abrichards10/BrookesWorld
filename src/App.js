@@ -1,77 +1,3 @@
-// import React, { useState, useEffect } from "react";
-// import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-// import Header from "./components/Header";
-// import Footer from "./components/Footer";
-// import Home from "./components/Home";
-// import Gallery from "./components/Gallery";
-// import CarouselComponent from "./components/Carousel";
-// import "./components/App.css";
-// import StarsAnimation from "./components/StarsAnimation";
-// import CloudsAnimation from "./components/CloudsAnimation";
-
-// const App = () => {
-//   const [isDarkMode, setIsDarkMode] = useState(false);
-//   const [backgroundColor, setBgColor] = useState("var(--light-bg)");
-//   const [showClouds, setShowClouds] = useState(false);
-
-//   const toggleDarkMode = () => {
-//     const newMode = !isDarkMode;
-//     setIsDarkMode(newMode);
-//     setShowClouds(false); // Reset clouds on dark mode change
-
-//     if (newMode) {
-//       setBgColor("var(--dark-start-bg)");
-//     } else {
-//       setBgColor("var(--light-bg)");
-//     }
-//   };
-
-//   useEffect(() => {
-//     const handleScroll = () => {
-//       const scrollPosition = window.scrollY;
-//       if (isDarkMode) {
-//         setBgColor(
-//           scrollPosition > 150 ? "var(--dark-bg)" : "var(--dark-start-bg)"
-//         );
-//       } else {
-//         setBgColor(
-//           scrollPosition > 150 ? "var(--light-end-bg)" : "var(--light-start-bg)"
-//         );
-//         setShowClouds(scrollPosition > 150); // Show clouds on scroll down
-//       }
-//     };
-
-//     window.addEventListener("scroll", handleScroll);
-//     return () => window.removeEventListener("scroll", handleScroll);
-//   }, [isDarkMode]);
-
-//   return (
-//     <Router>
-//       <div
-//         className={isDarkMode ? "dark-mode" : "light-mode"}
-//         style={{ position: "relative", overflow: "hidden" }}
-//       >
-//         {showClouds && !isDarkMode && <CloudsAnimation />}
-//         {isDarkMode && <StarsAnimation />}
-//         <div className="full-container" style={{ backgroundColor }}>
-//           <Header toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode} />
-//           <div className="container">
-//             <Routes>
-//               <Route path="/" element={<Home />} />
-//               <Route path="/gallery" element={<Gallery />} />
-//             </Routes>
-//             <CarouselComponent />
-//             <Gallery />
-//           </div>
-//           <Footer />
-//         </div>
-//       </div>
-//     </Router>
-//   );
-// };
-
-// export default App;
-
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Header from "./components/Header";
@@ -82,6 +8,7 @@ import CarouselComponent from "./components/Carousel";
 import "./components/App.css";
 import StarsAnimation from "./components/StarsAnimation";
 import CloudsAnimation from "./components/CloudsAnimation";
+import ScrollBar from "./components/ScrollBar";
 
 const App = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -180,14 +107,21 @@ const App = () => {
         {showClouds && !isDarkMode && <CloudsAnimation />}
         {isDarkMode && <StarsAnimation />}
         <div className="full-container" style={{ backgroundColor }}>
+          {/* <ScrollBar /> */}
           <Header toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode} />
           <div className="container">
+            {/* <section id="section1" style={{ height: "100vh" }}> */}
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/gallery" element={<Gallery />} />
-            </Routes>
+            </Routes>{" "}
+            {/* </section> */}
+            {/* <section id="section2" style={{ height: "200vh" }}> */}
             <CarouselComponent />
+            {/* </section> */}
+            {/* <section id="section3" style={{ height: "300vh" }}> */}
             <Gallery />
+            {/* </section> */}
           </div>
           <Footer />
         </div>

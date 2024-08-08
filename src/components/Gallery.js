@@ -7,6 +7,7 @@ import projectImage2 from "./assets/SideProject2.jpg";
 import projectImage3 from "./assets/SideProject3.png";
 import projectImage4 from "./assets/SideProject4.jpg";
 import projectImage5 from "./assets/SideProject5.png";
+import projectImage6 from "./assets/SideProject6.jpg";
 
 const projects = [
   {
@@ -19,7 +20,7 @@ const projects = [
     image: projectImage1,
     caption: "Project 1",
     summary:
-      "Renovating my childhood home to create a space for an AirBnB (featuring my dad ❤️)",
+      "Renovating my childhood home to create a space for an AirBnB (featuring my dad ❤️) I drive 3 hours every 3 weeks to work on another part of the project.",
   },
   {
     image: projectImage2,
@@ -38,13 +39,27 @@ const projects = [
     summary:
       "Currently a part of the BEST Trial for Chronic Back Pain - currently working on the second round of treatment! ",
   },
-
-  // Add more projects as needed
+  {
+    image: projectImage6,
+    caption: "Project 4",
+    summary: (
+      <>
+        I like to write things, this one is my longest:{" "}
+        <a
+          href="https://medium.com/@angelarichards261/pain-b9052e391458"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Pain (But it's hopeful I promise)
+        </a>
+      </>
+    ),
+  },
 ];
 
 const Gallery = () => {
   return (
-    <div>
+    <div class="gallery-container">
       <h3 className="titles">Side Projects</h3>
       <div className="gallery">
         {projects.map((project, index) => (

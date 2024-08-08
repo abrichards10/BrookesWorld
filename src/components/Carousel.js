@@ -15,7 +15,7 @@ import career3 from "./assets/Career_Chatter3.png";
 const CarouselComponent = () => {
   return (
     <div className="carousel-container">
-      <h3 class="titles">Mobile App Design and Development</h3>
+      <h3 class="titles-app">Mobile App Design and Development</h3>
       <Carousel controls={false}>
         <Carousel.Item className="carousel-item-custom">
           <Row className="d-flex justify-content-center align-items-center h-100">
