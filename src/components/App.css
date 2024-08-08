@@ -81,8 +81,9 @@
 }
 
 .BrookesWorld {
-  font-size: 100px;
+  font-size: 10vw; /* 10% of the viewport width */
 }
+
 
 .BrookeHeader {
   padding-top: 8px;
