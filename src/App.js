@@ -8,7 +8,7 @@ import CarouselComponent from "./components/Carousel";
 import "./components/App.css";
 import StarsAnimation from "./components/StarsAnimation";
 import CloudsAnimation from "./components/CloudsAnimation";
-import ScrollBar from "./components/ScrollBar";
+// import ScrollBar from "./components/ScrollBar";
 
 const App = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
