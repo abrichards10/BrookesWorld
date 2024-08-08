@@ -9,6 +9,10 @@ import StarsAnimation from "./components/StarsAnimation";
 import CloudsAnimation from "./components/CloudsAnimation";
 import CareerSection from "./components/CareerSection";
 import CompaniesSection from "./components/CompaniesSection";
+import IntroSection from "./components/IntroSection";
+import TagCloud from "TagCloud";
+import { Row } from "react-bootstrap";
+import WordCloud from "./components/WordCloud";
 
 const App = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -105,8 +109,12 @@ const App = () => {
         <Header toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode} />
         <div className="container">
           <Home />
+          <IntroSection />
           <CareerSection />
-          <CarouselComponent />
+          <div className="main-content">
+            <CarouselComponent />
+            <WordCloud />
+          </div>
           <Gallery />
           <CompaniesSection />
         </div>

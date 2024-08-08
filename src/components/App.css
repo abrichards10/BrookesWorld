@@ -552,3 +552,69 @@
 .testimonial {
   font-style: italic;
 }
+
+/* src/components/IntroSection.css */
+
+.intro-section {
+  width: 50vw; 
+  margin: 0 auto; 
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 300px;
+}
+
+.intro-content {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Space between photo and text */
+  flex-wrap: wrap; /* Ensure responsiveness */
+}
+
+.intro-photo {
+  flex: 1;
+  max-width: 200px; /* Increase this value to make the photo larger */
+  width: 100%;
+}
+
+.intro-photo img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%; /* Circle shape */
+}
+
+.intro-text {
+  flex: 2;
+}
+
+.intro-text h2 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.intro-text p {
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .intro-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .intro-text h2 {
+    font-size: 1.5rem;
+  }
+
+  .intro-text p {
+    font-size: 0.875rem;
+  }
+}
+
+
+.main-content {
+  display: flex;
+  justify-content: space-between; /* Space between carousel and word cloud */
+  align-items: flex-start; /* Align items to the top */
+  gap: 20px; /* Optional: space between items */
+}

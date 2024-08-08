@@ -19,7 +19,7 @@ const CarouselComponent = () => {
       <Carousel controls={false}>
         <Carousel.Item className="carousel-item-custom">
           <Row className="d-flex justify-content-center align-items-center h-100">
-            <Col xs={12} md={4} className="d-flex justify-content-center">
+            <Col xs={1} md={4} className="d-flex justify-content-center">
               <img
                 className="d-block iphone-image"
                 src={gif1} // Import GIF from assets
