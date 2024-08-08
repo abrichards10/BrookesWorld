@@ -10,8 +10,6 @@ import CloudsAnimation from "./components/CloudsAnimation";
 import CareerSection from "./components/CareerSection";
 import CompaniesSection from "./components/CompaniesSection";
 import IntroSection from "./components/IntroSection";
-import TagCloud from "TagCloud";
-import { Row } from "react-bootstrap";
 import WordCloud from "./components/WordCloud";
 
 const App = () => {

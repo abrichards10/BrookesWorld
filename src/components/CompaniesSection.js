@@ -88,6 +88,7 @@ const CompaniesSection = () => {
                 alt={person[index]?.name}
                 className="testimonial-image"
               />
+              <h6 className="testName">{person[index]?.name}</h6>
               <h6 className="testimonial-title">
                 {person[index]?.testimonial.title}
               </h6>
