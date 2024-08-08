@@ -105,7 +105,7 @@ const App = () => {
           <Header toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode} />
           <div className="container">
             <Routes>
-              <Route path="/" element={<Home />} />
+              <Route path="/brookesworld" element={<Home />} />
               <Route path="/gallery" element={<Gallery />} />
             </Routes>
             <CarouselComponent />
