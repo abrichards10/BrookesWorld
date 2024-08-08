@@ -8,15 +8,21 @@ const CareerSection = () => {
         <h2>What I'm Looking For in a Career</h2>
         <ul>
           <li>
-            Roles that leverage my technical skills while fostering a
-            collaborative environment.
+            Roles that surround me with driven, committed, sorta crazy
+            individuals so I can leverage my technical skills to take over the
+            world while making friends at the same time.
           </li>
-          <li>Opportunities to lead projects and mentor team members.</li>
+          <li>
+            Opportunities to lead and own projects, mentor team members, and
+            learn from people smarter than me.
+          </li>
           <li>
             Positions where I can work on challenging problems and contribute to
-            meaningful projects.
+            products that will help people and companies succeed.
           </li>
-          <li>Professional growth and continuous learning opportunities.</li>
+          <li>
+            Room for professional growth, personal growth, and access to coffee.
+          </li>
         </ul>
 
         <h2>What I Can Offer</h2>
@@ -42,8 +48,9 @@ const CareerSection = () => {
         <h2>Bonus Points</h2>
         <ul>
           <li>
-            🎉 Passion for making code as clean and elegant as a piece of art.
-            (After intense rounds of super messy code of course)
+            🎉 Passion for making code as clean and elegant as a Pollock
+            Painting (aka intense rounds of super messy code that eventually
+            comes together)
           </li>
           <li>💪 Sheer, raw commitment and ownership of their work</li>
           <li>

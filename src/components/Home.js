@@ -16,6 +16,7 @@ const Home = () => {
         animate={{ opacity: 1 }}
         transition={{ duration: 3 }}
       >
+        <br />
         <i> "Commitment is an act, not a word." – Jean-Paul Sartre </i>
       </motion.h2>
       <motion.h5
@@ -23,7 +24,8 @@ const Home = () => {
         animate={{ opacity: 1 }}
         transition={{ duration: 4 }}
       >
-        I am a software engineer, teacher, and mentor.
+        {" "}
+        <br />I am a teacher, mentor and software engineer, in that order.
       </motion.h5>
       {/* Add more content here */}
     </div>

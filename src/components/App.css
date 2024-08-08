@@ -46,13 +46,12 @@
 }
 
 .light-mode .footer {
-  background-color: var(--light-accent);
+  /* background-color: var(--light-bg); */
   margin-left: 50px;
   margin-bottom: 20px;
   margin-right: 50px;
   border-radius: 20px;
 }
-
 
 .dark-mode {
   background-color: var(--dark-bg);
@@ -64,7 +63,7 @@
 }
 
 .container {
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: 'Courier New', Courier, monospace;
   padding: 20px;
 }
 
@@ -73,7 +72,7 @@
   margin-top: 20px;
   margin-right: 50px;
   border-radius: 20px;
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: 'Courier New', Courier, monospace;
   padding: 10px;
   color: var(--header-text-color);
   display: flex;
@@ -177,20 +176,54 @@
   display: flex;
   align-items: center; 
 }
+/* App.css */
 
 .footer {
-  background-color: var(--footer-bg);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-
-  color: var(--footer-text);
-  padding: 20px 0;
-  text-align: center;
+  padding: 20px;
+  background-color: #f1f1f1; /* Adjust based on your theme */
 }
 
-.footer-column {
+.footer-content {
   display: flex;
-  flex-direction: column;
-  margin: 10px 0;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-main-content {
+  flex: 1; /* Allows this section to take up available space */
+}
+
+.social-links {
+  display: flex;
+  gap: 10px; /* Add spacing between social links */
+}
+
+.contact-info, .copyright {
+  margin-top: 10px;
+}
+
+.footer-websites {
+  flex-shrink: 0; /* Prevents this section from shrinking */
+  font-size: 14px;
+}
+
+.footer-websites ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-websites li {
+  margin: 5px 0;
+}
+
+.footer-websites a {
+  color: #007bff; /* Adjust based on your theme */
+  text-decoration: none;
+}
+
+.footer-websites a:hover {
+  text-decoration: underline;
 }
 
 .social-link {
@@ -245,12 +278,14 @@
 }
 
 .gallery-item {
+  width: 300px; /* Fixed width for each item */
+  height: 400px; /* Fixed height for each item */
+  border: 1px solid #ddd; /* Optional: add a border */
   position: relative;
   overflow: hidden; 
   flex: 1 1 calc(33% - 16px);
   box-sizing: border-box;
   max-width: 300px; 
-  border-radius: 8px;
   transition: transform 0.6s ease; 
 }
 
@@ -265,7 +300,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover; 
-  border-radius: 8px;
+  border-radius: 20px;
   transition: transform 0.6s ease, opacity 0.3s ease; 
 }
 
@@ -290,6 +325,8 @@
   transition: opacity 0.3s ease; 
   padding: 16px;
   box-sizing: border-box;
+  border-radius: 20px;
+
 }
 
 .gallery-item:hover .gallery-summary {
@@ -303,7 +340,7 @@
 }
 
 .carousel-item img {
-  border-radius: 15px; 
+  border-radius: 20px; 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
@@ -341,7 +378,7 @@
 }
 
 .iphone-image {
-  border-radius: 30px; 
+  border-radius: 20px; 
   border: 2px solid #000; 
   object-fit: cover; 
   width: 100%;
@@ -452,11 +489,15 @@
   background: #bbb; 
 }
 
+.links {
+  color: rgb(110, 110, 110);
+}
+
 .career-section {
   padding: 2rem;
   background-color: var(--section-bg); 
   color: var(--text-color); 
-  border-radius: 8px;
+  border-radius: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin: 2rem 0;
   margin-bottom: 300px;
@@ -470,4 +511,44 @@
 .career-section p {
   font-size: 1rem;
   line-height: 1.6;
+}
+
+.companies-section {
+  font-family: 'Courier New', Courier, monospace;
+  padding: 20px;
+  background-color: var(--section-bg);
+  padding-bottom: 300px;
+}
+
+.companies-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.companies-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.company {
+  flex: 1 1 200px;
+  max-width: 300px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.company-logo {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.testimonial {
+  font-style: italic;
 }

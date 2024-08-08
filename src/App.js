@@ -8,6 +8,7 @@ import "./components/App.css";
 import StarsAnimation from "./components/StarsAnimation";
 import CloudsAnimation from "./components/CloudsAnimation";
 import CareerSection from "./components/CareerSection";
+import CompaniesSection from "./components/CompaniesSection";
 
 const App = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -107,6 +108,7 @@ const App = () => {
           <CareerSection />
           <CarouselComponent />
           <Gallery />
+          <CompaniesSection />
         </div>
         <Footer />
       </div>
