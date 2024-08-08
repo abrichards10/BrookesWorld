@@ -94,7 +94,7 @@ const App = () => {
   }, [isDarkMode]);
 
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <div
         className={isDarkMode ? "dark-mode" : "light-mode"}
         style={{ position: "relative", overflow: "hidden" }}
@@ -104,10 +104,7 @@ const App = () => {
         <div className="full-container" style={{ backgroundColor }}>
           <Header toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode} />
           <div className="container">
-            <Routes>
-              <Route path="/brookesworld" element={<Home />} />
-              <Route path="/gallery" element={<Gallery />} />
-            </Routes>
+            <Home />
             <CarouselComponent />
             <Gallery />
           </div>
