@@ -10,9 +10,6 @@ const Header = ({ darkMode, toggleDarkMode }) => {
         <span className="icon moon">
           <FaMoon />
         </span>
-        <span className="icon sun">
-          <FaSun />
-        </span>
       </button>
     </header>
   );
