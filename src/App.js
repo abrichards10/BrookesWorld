@@ -7,6 +7,7 @@ import CarouselComponent from "./components/Carousel";
 import "./components/App.css";
 import StarsAnimation from "./components/StarsAnimation";
 import CloudsAnimation from "./components/CloudsAnimation";
+import CareerSection from "./components/CareerSection";
 
 const App = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -103,6 +104,7 @@ const App = () => {
         <Header toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode} />
         <div className="container">
           <Home />
+          <CareerSection />
           <CarouselComponent />
           <Gallery />
         </div>

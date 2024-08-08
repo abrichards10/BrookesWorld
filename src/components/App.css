@@ -103,10 +103,7 @@
   text-align: center;
 }
 
-
-
-.header button {
-  
+.header button { 
   border: none;
   border-radius: 50px; 
   cursor: pointer;
@@ -183,6 +180,8 @@
 
 .footer {
   background-color: var(--footer-bg);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+
   color: var(--footer-text);
   padding: 20px 0;
   text-align: center;
@@ -228,7 +227,7 @@
 
 .gallery-container {
   width: 100%;
-  background-color:rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
 }
 
@@ -311,7 +310,7 @@
 .carousel-container {
   width: 100%;
   padding: 50px;
-  background-color:rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
 }
 
@@ -453,3 +452,22 @@
   background: #bbb; 
 }
 
+.career-section {
+  padding: 2rem;
+  background-color: var(--section-bg); 
+  color: var(--text-color); 
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 2rem 0;
+  margin-bottom: 300px;
+}
+
+.career-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.career-section p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
