@@ -1,5 +1,5 @@
 import React from "react";
-import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaCalendarAlt } from "react-icons/fa";
 import "./App.css"; // Ensure this CSS file is linked
 
 const Footer = ({ darkMode }) => {
@@ -24,6 +24,10 @@ const Footer = ({ darkMode }) => {
             >
               <FaGithub size={24} />
             </a>
+            <div className="dateCreated">
+              <FaCalendarAlt size={20} style={{ marginRight: "8px" }} />
+              Date created: 08/07/24
+            </div>
           </div>
           <div className="contact-info">
             <p>
@@ -39,7 +43,7 @@ const Footer = ({ darkMode }) => {
             </p>
           </div>
         </div>
-        <div className="footer-websites ">
+        <div className="footer-websites">
           Cool Websites:
           <ul>
             <li>
@@ -49,7 +53,6 @@ const Footer = ({ darkMode }) => {
                 rel="noopener noreferrer"
               >
                 <div className="links">
-                  {" "}
                   Typelit —&gt; Practice typing out whole books
                 </div>
               </a>
@@ -68,7 +71,6 @@ const Footer = ({ darkMode }) => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                {" "}
                 <div className="links">Excalidraw —&gt; Draw stuff</div>
               </a>
             </li>

@@ -11,6 +11,7 @@ import CareerSection from "./components/CareerSection";
 import CompaniesSection from "./components/CompaniesSection";
 import IntroSection from "./components/IntroSection";
 import WordCloud from "./components/WordCloud";
+import ThanksMessage from "./components/ThanksMessage";
 
 const App = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -116,6 +117,7 @@ const App = () => {
           <Gallery />
           <CompaniesSection />
         </div>
+        <ThanksMessage />
         <Footer />
       </div>
     </div>

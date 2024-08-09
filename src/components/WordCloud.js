@@ -25,12 +25,14 @@ const texts = [
   "Bootstrap",
   "Java",
 ];
+
 const options = {
-  radius: 200,
+  radius: 250, // Increased radius for a larger cloud
   maxSpeed: "fast",
-  initSpeed: "fast",
-  direction: 135,
+  initSpeed: "normal", // Slightly slower initial speed
+  direction: 135, // Diagonal direction for a different effect
   keep: true,
+  useContainerInlineStyle: true, // Apply styles directly to the container
 };
 
 const WordCloud = () => {

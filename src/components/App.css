@@ -185,6 +185,7 @@
 
 .social-links {
   display: flex;
+  align-items: center;
   gap: 10px; /* Add spacing between social links */
 }
 
@@ -231,6 +232,12 @@
 .copyright {
   font-size: 14px;
   margin-top: 10px;
+}
+
+.dateCreated {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
 }
 
 .gallery-container {
@@ -758,4 +765,35 @@ z-index: -1;
   justify-content: space-between; 
   align-items: center; 
   gap: 20px; 
+}
+
+.word {
+  color: #333; /* Default text color */
+  font-size: 16px; /* Default font size */
+  font-weight: bold; /* Make text bold */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+  transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+.word:hover {
+  color: #ff6347; /* Change color on hover */
+  transform: scale(1.2); /* Enlarge text on hover */
+}
+
+/* src/components/ThanksMessage.css */
+.light-mode .thanks-message {
+  text-align: center;
+  padding: 20px;
+  font-size: 1.2rem;
+  color: var(--light-text); /* You can adjust the color based on light/dark mode */
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.dark-mode .thanks-message {
+  text-align: center;
+  padding: 20px;
+  font-size: 1.2rem;
+  color: var(--dark-text); /* You can adjust the color based on light/dark mode */
+  font-family: 'Courier New', Courier, monospace;
+
 }
