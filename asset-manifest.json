@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/brookes-world/static/css/main.68569e5f.css",
-    "main.js": "/brookes-world/static/js/main.053bac5f.js",
+    "main.css": "/brookes-world/static/css/main.c1c11b6e.css",
+    "main.js": "/brookes-world/static/js/main.bd949720.js",
     "static/js/453.e86647f6.chunk.js": "/brookes-world/static/js/453.e86647f6.chunk.js",
     "static/media/BrookeLook.jpeg": "/brookes-world/static/media/BrookeLook.3c90f992f189e70bace9.jpeg",
     "static/media/Pocket_Python2.gif": "/brookes-world/static/media/Pocket_Python2.cfdb39beb88f1a1726e5.gif",
@@ -9,6 +9,7 @@
     "static/media/Witches2.png": "/brookes-world/static/media/Witches2.4344661db551ebf4847f.png",
     "static/media/Pocket_Python3.gif": "/brookes-world/static/media/Pocket_Python3.e5f28f85f1b41b4d475f.gif",
     "static/media/Witches1.png": "/brookes-world/static/media/Witches1.1a148e812cb3468933e5.png",
+    "static/media/ghibliIcon.png": "/brookes-world/static/media/ghibliIcon.46a7de534ddbbee1933c.png",
     "static/media/SideProject2.jpg": "/brookes-world/static/media/SideProject2.4d1349ea93b86869c3e2.jpg",
     "static/media/SideProject1.jpg": "/brookes-world/static/media/SideProject1.79bb11577d147ce0c61f.jpg",
     "static/media/Career_Chatter1.png": "/brookes-world/static/media/Career_Chatter1.f99534f02d2d4d153a73.png",
@@ -18,16 +19,18 @@
     "static/media/Career_Chatter3.png": "/brookes-world/static/media/Career_Chatter3.85dc75c84e126d0c78e1.png",
     "static/media/DishcoveryLogo.png": "/brookes-world/static/media/DishcoveryLogo.40854d49102a20dba1de.png",
     "static/media/SideProject4.jpg": "/brookes-world/static/media/SideProject4.4959e6a26b6f15d46f80.jpg",
+    "static/media/Anteneh.jpg": "/brookes-world/static/media/Anteneh.d960e0f654ad4f66a9e4.jpg",
     "static/media/SideProject3.png": "/brookes-world/static/media/SideProject3.6b5457d637d5221691f7.png",
     "static/media/seo-logo.png": "/brookes-world/static/media/seo-logo.f07023be9f132e5711a6.png",
     "static/media/MissionBitLogo.png": "/brookes-world/static/media/MissionBitLogo.d30748ae3a7ece6dd94f.png",
+    "static/media/rachel.jpg": "/brookes-world/static/media/rachel.2b49c7a7f04822f5666b.jpg",
     "index.html": "/brookes-world/index.html",
-    "main.68569e5f.css.map": "/brookes-world/static/css/main.68569e5f.css.map",
-    "main.053bac5f.js.map": "/brookes-world/static/js/main.053bac5f.js.map",
+    "main.c1c11b6e.css.map": "/brookes-world/static/css/main.c1c11b6e.css.map",
+    "main.bd949720.js.map": "/brookes-world/static/js/main.bd949720.js.map",
     "453.e86647f6.chunk.js.map": "/brookes-world/static/js/453.e86647f6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.68569e5f.css",
-    "static/js/main.053bac5f.js"
+    "static/css/main.c1c11b6e.css",
+    "static/js/main.bd949720.js"
   ]
 }
