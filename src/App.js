@@ -1,3 +1,4 @@
+// App.js
 import React, { useState, useEffect } from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -12,6 +13,7 @@ import CompaniesSection from "./components/CompaniesSection";
 import IntroSection from "./components/IntroSection";
 import WordCloud from "./components/WordCloud";
 import ThanksMessage from "./components/ThanksMessage";
+import ScrollToTopButton from "./components/ScrollToTopButton";
 
 const App = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -119,6 +121,7 @@ const App = () => {
         </div>
         <ThanksMessage />
         <Footer />
+        <ScrollToTopButton /> {/* Add the button here */}
       </div>
     </div>
   );
