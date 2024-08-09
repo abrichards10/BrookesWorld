@@ -51,7 +51,7 @@ const projects = [
           target="_blank"
           rel="noopener noreferrer"
         >
-          Pain (But it's hopeful I promise)
+          "Pain" (But it's hopeful I promise)
         </a>
       </>
     ),

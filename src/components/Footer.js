@@ -1,13 +1,9 @@
 import React, { useState } from "react";
 import { FaLinkedin, FaGithub, FaCalendarAlt } from "react-icons/fa";
-import CalendarTooltip from "./CalendarTooltip"; // Import the CalendarTooltip component
 import "./App.css"; // Ensure this CSS file is linked
 
 const Footer = ({ darkMode }) => {
-  const [isTooltipVisible, setTooltipVisible] = useState(false);
-
-  // Date you want to highlight
-  const highlightDate = new Date("2024-08-07"); // Example date, adjust as needed
+  const [setTooltipVisible] = useState(false);
 
   return (
     <footer className={`footer ${darkMode ? "dark-mode" : "light-mode"}`}>
