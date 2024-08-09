@@ -87,11 +87,36 @@
   position: relative;
 }
 
+.logo-container {
+  position: relative;
+  display: inline-block;
+}
+
 .header-logo { /*GHIBLI LOGO*/
   height: 24px; /* Adjust height as needed */
   width: auto;
   position: relative; /* Ensure relative positioning for tooltip */
   cursor: pointer; /* Ensure cursor changes to pointer */
+}
+
+.text-bubble {
+  position: absolute;
+  bottom: -120%; /* Adjust to position the bubble above the logo */
+  transform: translateX(-10%);
+  background-color: #333; /* Background color of the bubble */
+  color: #fff; /* Text color */
+  padding: 8px 12px;
+  border-radius: 4px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  font-size: 14px; /* Adjust as needed */
+}
+
+.logo-container:hover .text-bubble {
+  opacity: 1;
+  visibility: visible;
 }
 
 .header-text { /*BROOKE TEXT*/
@@ -693,7 +718,6 @@ z-index: -1;
     font-size: 0.875rem;
   }
 }
-
 
 .main-content {
   display: flex;

@@ -10,16 +10,16 @@ const Header = ({ darkMode, toggleDarkMode }) => {
         <h4 className="header-text">Brooke</h4>
         <div className="logo-container">
           <img src={logo} alt="Brooke Logo" className="header-logo" />
-          {/* <div className="tooltip">
-            Psst... have you seen the{" "}
-            <a
-              href="https://www.youtube.com/watch?v=Y5e9tT4Tq4k"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              new Studio Ghibli movie?
-            </a>
-          </div> */}
+          <a
+            href="https://www.youtube.com/watch?v=t5khm-VjEu4"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-bubble-link"
+          >
+            <div className="text-bubble">
+              Psst... Have you seen the new Studio Ghibli movie?
+            </div>
+          </a>
         </div>
       </div>
 
