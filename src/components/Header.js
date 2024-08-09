@@ -1,7 +1,9 @@
+// Header.js
 import React from "react";
-import { FaMoon } from "react-icons/fa";
+import { FaMoon, FaRegCommentAlt } from "react-icons/fa";
 import logo from "./assets/ghibliIcon.png"; // Ensure the correct path
 import "./App.css"; // Import the CSS file
+import { Link } from "react-router-dom"; // Add this import
 
 const Header = ({ darkMode, toggleDarkMode }) => {
   return (
@@ -23,11 +25,23 @@ const Header = ({ darkMode, toggleDarkMode }) => {
         </div>
       </div>
 
-      <button onClick={toggleDarkMode} className={darkMode ? "dark-mode" : ""}>
-        <span className="icon moon">
-          <FaMoon />
-        </span>
-      </button>
+      <div className="icon-container">
+        <button
+          onClick={toggleDarkMode}
+          className={darkMode ? "dark-mode" : ""}
+        >
+          <span className="moon">
+            <FaMoon />
+          </span>
+        </button>
+        <Link
+          to="/feedback"
+          className="feedback-icon"
+          title="Find a bug? Leave feedback!"
+        >
+          <FaRegCommentAlt />
+        </Link>
+      </div>
     </header>
   );
 };

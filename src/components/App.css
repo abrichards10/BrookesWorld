@@ -11,6 +11,7 @@
 */
 
 .full-container {
+  min-height: 100vh; 
   padding-top: 1px;
   padding-bottom: 1px;
   transition: background 0.5s ease; 
@@ -161,12 +162,10 @@
   cursor: pointer;
   background-color: var(--button-bg-light); 
   color: var(--button-text-light); 
-  display: flex;
   align-items: center;
-  justify-content: center;
+  display: flex;
   transition: background-color 0.3s, color 0.3s;
   position: relative;
-  width: 60px; 
   height: 30px; 
 }
 
@@ -853,4 +852,161 @@ z-index: -1;
 .scroll-to-top-icon {
   font-size: 24px;
   font-weight: bold;
+}
+
+
+/* App.css */
+
+/* Container for icons */
+.icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 10px;
+}
+
+/* Feedback icon styling */
+.feedback-icon {
+  margin-left: 16px;
+  font-size: 1.5rem; /* Adjust size as needed */
+  color: var(--icon-color); /* Set your icon color */
+  cursor: pointer;
+  position: relative;
+}
+
+.feedback-icon::after {
+  content: attr(title);
+  position: absolute;
+  bottom: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--tooltip-bg); /* Set your tooltip background color */
+  color: var(--tooltip-text); /* Set your tooltip text color */
+  padding: 4px 8px;
+  border-radius: 4px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+  font-size: 0.75rem; /* Adjust font size as needed */
+}
+
+.feedback-icon:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+.feedback-form-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-form-title {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  color: #333;
+}
+
+.feedback-form-sub {
+  text-align: center;
+}
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.feedback-form-label {
+  position: relative;
+  display: inline-block;
+  margin-right: 10px;
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+.feedback-form-label::after {
+  content: "*";
+  color: red;
+  margin-left: 5px;
+}
+
+.feedback-form-label.required {
+  position: relative;
+}
+
+.feedback-form-label.required::after {
+  content: "*";
+  color: red;
+  margin-left: 5px;
+}
+
+.tooltipForm {
+  position: absolute;
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  display: none;
+  font-size: 12px;
+  top: 100%;
+  left: 0;
+  white-space: nowrap;
+}
+
+.tooltipForm::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 5px;
+  border-style: solid;
+  border-color: #333 transparent transparent transparent;
+}
+
+.feedback-form-label:hover .tooltipForm {
+  display: block;
+}
+
+.feedback-form-input,
+.feedback-form-textarea {
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: #333;
+}
+
+.feedback-form-input:focus,
+.feedback-form-textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.feedback-form-textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+.feedback-form-button {
+  padding: 0.75rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.feedback-form-button:hover {
+  background-color: #0056b3;
 }

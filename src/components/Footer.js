@@ -65,7 +65,11 @@ const Footer = ({ darkMode }) => {
               </a>
             </li>
             <li>
-              <a href="websim.ai" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://websim.ai/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <div className="links">
                   <u>Websim.ai</u> —&gt; Can create cool website templates from
                   an AI generated prompt 👀

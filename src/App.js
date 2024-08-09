@@ -1,37 +1,32 @@
-// App.js
-import React, { useState, useEffect } from "react";
+import React from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./components/Home";
+import FeedbackForm from "./components/FeedbackForm";
+import Layout from "./components/Layout";
+import IntroSection from "./components/IntroSection";
+import CareerSection from "./components/CareerSection";
+import CarouselComponent from "./components/Carousel";
+import WordCloud from "./components/WordCloud";
+import Gallery from "./components/Gallery";
+import CompaniesSection from "./components/CompaniesSection";
+import ThanksMessage from "./components/ThanksMessage";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Home from "./components/Home";
-import Gallery from "./components/Gallery";
-import CarouselComponent from "./components/Carousel";
-import "./components/App.css";
-import StarsAnimation from "./components/StarsAnimation";
-import CloudsAnimation from "./components/CloudsAnimation";
-import CareerSection from "./components/CareerSection";
-import CompaniesSection from "./components/CompaniesSection";
-import IntroSection from "./components/IntroSection";
-import WordCloud from "./components/WordCloud";
-import ThanksMessage from "./components/ThanksMessage";
 import ScrollToTopButton from "./components/ScrollToTopButton";
 
-const App = () => {
-  const [isDarkMode, setIsDarkMode] = useState(false);
-  const [backgroundColor, setBgColor] = useState("var(--light-bg)");
-  const [showClouds, setShowClouds] = useState(false);
+export default function App() {
+  const [isDarkMode, setIsDarkMode] = React.useState(false);
+  const [backgroundColor, setBgColor] = React.useState("var(--light-bg)");
+  const [showClouds, setShowClouds] = React.useState(false);
 
   const toggleDarkMode = () => {
     const newMode = !isDarkMode;
     setIsDarkMode(newMode);
     setShowClouds(false); // Reset clouds on dark mode change
-    if (newMode) {
-      setBgColor("var(--dark-start-bg)");
-    } else {
-      setBgColor("var(--light-bg)");
-    }
+    setBgColor(newMode ? "var(--dark-start-bg)" : "var(--light-bg)");
   };
 
-  useEffect(() => {
+  React.useEffect(() => {
     const interpolateColor = (color1, color2, percent) => {
       const rgb1 = hexToRgb(color1);
       const rgb2 = hexToRgb(color2);
@@ -100,31 +95,46 @@ const App = () => {
   }, [isDarkMode]);
 
   return (
-    <div
-      className={isDarkMode ? "dark-mode" : "light-mode"}
-      style={{ position: "relative", overflow: "hidden" }}
-    >
-      {showClouds && !isDarkMode && <CloudsAnimation />}
-      {isDarkMode && <StarsAnimation />}
-      <div className="full-container" style={{ backgroundColor }}>
-        <Header toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode} />
-        <div className="container">
-          <Home />
-          <IntroSection />
-          <CareerSection />
-          <div className="main-content">
-            <CarouselComponent />
-            <WordCloud />
-          </div>
-          <Gallery />
-          <CompaniesSection />
-        </div>
-        <ThanksMessage />
-        <Footer />
-        <ScrollToTopButton /> {/* Add the button here */}
-      </div>
-    </div>
-  );
-};
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <Layout
+              toggleDarkMode={toggleDarkMode}
+              isDarkMode={isDarkMode}
+              backgroundColor={backgroundColor}
+              showClouds={showClouds}
+            />
+          }
+        >
+          <Route
+            index
+            element={
+              <>
+                <Header
+                  toggleDarkMode={toggleDarkMode}
+                  isDarkMode={isDarkMode}
+                />
 
-export default App;
+                <Home />
+                <IntroSection />
+                <CareerSection />
+                <div className="main-content">
+                  <CarouselComponent />
+                  <WordCloud />
+                </div>
+                <Gallery />
+                <CompaniesSection />
+                <ThanksMessage />
+                <Footer />
+                <ScrollToTopButton />
+              </>
+            }
+          />
+          <Route path="feedback" element={<FeedbackForm />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  );
+}
