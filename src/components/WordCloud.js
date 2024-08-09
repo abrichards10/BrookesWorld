@@ -4,7 +4,9 @@ import TagCloud from "TagCloud";
 const container = ".content";
 const texts = [
   "Flutter",
+  "Dart",
   "Objective-C",
+  "C#",
   "JavaScript",
   "Typescript",
   "NodeJS",
@@ -17,6 +19,11 @@ const texts = [
   "Postman",
   "XCode",
   "Jupyter Notebook",
+  "HTML",
+  "CSS",
+  "React",
+  "Bootstrap",
+  "Java",
 ];
 const options = {
   radius: 200,

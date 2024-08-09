@@ -106,7 +106,7 @@
   background-color: #333; /* Background color of the bubble */
   color: #fff; /* Text color */
   padding: 8px 12px;
-  border-radius: 4px;
+  border-radius: 10px;
   white-space: nowrap;
   opacity: 0;
   visibility: hidden;
@@ -610,7 +610,6 @@ z-index: -1;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transition: opacity 0.6s ease; /* Smooth transition for fading */
 }
 
 .card-front {
@@ -737,7 +736,7 @@ z-index: -1;
 
 .main-content {
   display: flex;
-  justify-content: space-between; /* Space between carousel and word cloud */
-  align-items: flex-start; /* Align items to the top */
-  gap: 20px; /* Optional: space between items */
+  justify-content: space-between; 
+  align-items: center; 
+  gap: 20px; 
 }
