@@ -308,10 +308,12 @@
 }
 
 .carousel-container {
+  position: relative;
   width: 100%;
   padding: 50px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
+  overflow: visible; /* Ensure the container allows overflow */
 }
 
 .carousel-item-custom {
@@ -319,7 +321,9 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  overflow: hidden; 
+  overflow: visible; /* Allow content to overflow */
+  padding: 20px; /* Add padding to avoid content cut-off */
+  border-radius: 20px;
 }
 
 .carousel-item-custom img {
@@ -327,6 +331,7 @@
   height: auto; 
   object-fit: contain; 
 }
+
 
 .titles { /*SIDE PROJECTS TEXT*/
   z-index: 2;
@@ -340,6 +345,11 @@
   text-align: center;
 }
 
+.image-wrapper {
+  position: relative;
+  overflow: hidden; /* Hide overflow for the magnified part */
+}
+
 .iphone-image {
   border-radius: 20px; 
   border: 2px solid #000; 
@@ -347,6 +357,12 @@
   width: 100%;
   height: 100%; 
   max-width: 100%; 
+  transition: transform 0.3s ease; /* Smooth scaling effect */
+}
+
+.image-wrapper:hover .iphone-image {
+  transform: scale(1.5); /* Adjust the scale factor as needed */
+  z-index: 10; /* Ensure the magnified image is on top */
 }
 
 .stars-container {
