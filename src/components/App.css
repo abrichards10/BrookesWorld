@@ -404,7 +404,7 @@ z-index: -1;
   width: 150px; /* Adjust width as needed */
   height: 100px; /* Adjust height as needed */
   opacity: 0.3;
-  animation: cloudMove 60s linear infinite; 
+  animation: cloudMove 120s linear infinite; 
 }
 
 .cloud .circle {
