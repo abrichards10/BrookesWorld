@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaLinkedin, FaGithub, FaCalendarAlt } from "react-icons/fa";
+import CalendarTooltip from "./CalendarTooltip"; // Import the CalendarTooltip component
 import "./App.css"; // Ensure this CSS file is linked
 
 const Footer = ({ darkMode }) => {
+  const [isTooltipVisible, setTooltipVisible] = useState(false);
+
+  // Date you want to highlight
+  const highlightDate = new Date("2024-08-07"); // Example date, adjust as needed
+
   return (
     <footer className={`footer ${darkMode ? "dark-mode" : "light-mode"}`}>
       <div className="footer-content">
@@ -24,9 +30,14 @@ const Footer = ({ darkMode }) => {
             >
               <FaGithub size={24} />
             </a>
-            <div className="dateCreated">
+            <div
+              className="dateCreated"
+              onMouseEnter={() => setTooltipVisible(true)}
+              onMouseLeave={() => setTooltipVisible(false)}
+            >
               <FaCalendarAlt size={20} style={{ marginRight: "8px" }} />
               <b>Date created: 08/07/24</b>
+              {/* {isTooltipVisible && <CalendarTooltip date={highlightDate} />} */}
             </div>
           </div>
           <div className="contact-info">
@@ -44,7 +55,7 @@ const Footer = ({ darkMode }) => {
           </div>
         </div>
         <div className="footer-websites">
-          <b> Cool Websites:</b>
+          <b>Cool Websites:</b>
           <ul>
             <li>
               <a

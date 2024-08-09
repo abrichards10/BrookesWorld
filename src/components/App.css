@@ -237,9 +237,28 @@
 }
 
 .dateCreated {
-  font-size: 14px;
+  position: relative;
   display: flex;
   align-items: center;
+  font-size: 1rem;
+}
+
+.calendar-tooltip {
+  position: absolute;
+  top: 120%; /* Adjust based on your layout */
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+.react-calendar {
+  width: 200px; /* Adjust size as needed */
+  border: none;
 }
 
 .gallery-container {
@@ -782,7 +801,10 @@ z-index: -1;
   transform: scale(1.2); /* Enlarge text on hover */
 }
 
-/* src/components/ThanksMessage.css */
+.thanks-message {
+  margin-bottom: 300px;
+}
+
 .light-mode .thanks-message {
   text-align: center;
   padding: 20px;
