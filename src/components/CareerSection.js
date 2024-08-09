@@ -24,7 +24,7 @@ const CareerSection = () => {
             Room for professional growth, personal growth, and access to coffee.
           </li>
         </ul>
-
+        <br />
         <h2>What I Can Offer</h2>
         <ul>
           <li>
@@ -44,6 +44,7 @@ const CareerSection = () => {
             high-quality software.
           </li>
         </ul>
+        <br />
 
         <h2>Bonus Points</h2>
         <ul>

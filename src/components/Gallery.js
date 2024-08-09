@@ -46,6 +46,7 @@ const projects = [
       <>
         I like to write things, this one is my longest:{" "}
         <a
+          className="links"
           href="https://medium.com/@angelarichards261/pain-b9052e391458"
           target="_blank"
           rel="noopener noreferrer"

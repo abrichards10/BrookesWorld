@@ -33,8 +33,10 @@
 
   --light-start-bg: #ffffff; 
   --light-end-bg: #e0f7fa;
-}
 
+  --light-mode-apostrophe: #ff6347; /* Tomato color for light mode */
+  --dark-mode-apostrophe: #ff4500; /* OrangeRed color for dark mode */
+}
 
 .light-mode {
   background-color: var(--light-bg);
@@ -65,6 +67,14 @@
 .dark-mode .footer {
   background-color: white;
   opacity: .7;
+}
+
+.light-mode .apostrophe {
+  color: var(--dark-accent);
+}
+
+.dark-mode .apostrophe {
+  color: var(--light-accent);
 }
 
 .container {
@@ -118,6 +128,7 @@
   opacity: 1;
   visibility: visible;
 }
+
 
 .header-text { /*BROOKE TEXT*/
   padding-top: 10px;
@@ -631,7 +642,6 @@ z-index: -1;
 }
 
 .card-back {
-  /* background-color: #f9f9f9; */
   top: 0;
   left: 0;
   opacity: 0; /* Hide back card initially */
@@ -679,7 +689,7 @@ z-index: -1;
 }
 
 .intro-section {
-  width: 50vw; 
+  width: 70vw; 
   margin: 0 auto; 
   padding: 20px;
   border-radius: 20px;
@@ -690,20 +700,29 @@ z-index: -1;
 .intro-content {
   display: flex;
   align-items: center;
-  gap: 20px; /* Space between photo and text */
-  flex-wrap: wrap; /* Ensure responsiveness */
+  gap: 20px; 
+  flex-wrap: wrap; 
 }
 
 .intro-photo {
   flex: 1;
-  max-width: 200px; /* Increase this value to make the photo larger */
+  max-width: 300px; 
   width: 100%;
 }
 
 .intro-photo img {
   width: 100%;
   height: auto;
-  border-radius: 50%; /* Circle shape */
+  border-radius: 50%; 
+}
+
+
+.light-mode .intro-photo img {
+  border: 4px solid var(--light-accent);
+}
+
+.dark-mode .intro-photo img {
+  border: 4px solid var(--dark-accent);
 }
 
 .intro-text {

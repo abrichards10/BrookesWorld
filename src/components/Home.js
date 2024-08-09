@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import "./App.css"; // Make sure this CSS file includes the required styles
 
 const Home = () => {
   return (
@@ -9,7 +10,9 @@ const Home = () => {
         animate={{ opacity: 1 }}
         transition={{ duration: 2 }}
       >
-        <div className="BrookesWorld">Brooke's World</div>
+        <div className="BrookesWorld">
+          Brooke<span className="apostrophe">'</span>s World
+        </div>
       </motion.h1>
       <motion.h2
         initial={{ opacity: 0 }}
@@ -24,8 +27,7 @@ const Home = () => {
         animate={{ opacity: 1 }}
         transition={{ duration: 4 }}
       >
-        {" "}
-        <br />I am a teacher, mentor and software engineer, in that order.
+        <br />I am a teacher, mentor, and software engineer, in that order.
       </motion.h5>
       {/* Add more content here */}
     </div>
