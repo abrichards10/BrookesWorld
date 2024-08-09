@@ -26,7 +26,7 @@ const Footer = ({ darkMode }) => {
             </a>
             <div className="dateCreated">
               <FaCalendarAlt size={20} style={{ marginRight: "8px" }} />
-              Date created: 08/07/24
+              <b>Date created: 08/07/24</b>
             </div>
           </div>
           <div className="contact-info">
@@ -44,7 +44,7 @@ const Footer = ({ darkMode }) => {
           </div>
         </div>
         <div className="footer-websites">
-          Cool Websites:
+          <b> Cool Websites:</b>
           <ul>
             <li>
               <a
@@ -53,15 +53,15 @@ const Footer = ({ darkMode }) => {
                 rel="noopener noreferrer"
               >
                 <div className="links">
-                  Typelit —&gt; Practice typing out whole books
+                  <u>Typelit</u> —&gt; Practice typing out whole books
                 </div>
               </a>
             </li>
             <li>
               <a href="websim.ai" target="_blank" rel="noopener noreferrer">
                 <div className="links">
-                  Websim.ai —&gt; Can create cool website templates from an AI
-                  generated prompt 👀
+                  <u>Websim.ai</u> —&gt; Can create cool website templates from
+                  an AI generated prompt 👀
                 </div>
               </a>
             </li>
@@ -71,7 +71,9 @@ const Footer = ({ darkMode }) => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <div className="links">Excalidraw —&gt; Draw stuff</div>
+                <div className="links">
+                  <u>Excalidraw</u> —&gt; Draw stuff
+                </div>
               </a>
             </li>
           </ul>
