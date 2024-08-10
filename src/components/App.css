@@ -977,6 +977,7 @@ z-index: -1;
   border-color: #333 transparent transparent transparent;
 }
 
+
 .feedback-form-label:hover .tooltipForm {
   display: block;
 }
@@ -1021,13 +1022,15 @@ z-index: -1;
   color: var(--dark-text);
 }
 
-.feedback-form-button:hover {
-  background-color: var(--light-accent); /*TODO: change*/
+.light-mode .feedback-form-button:hover {
+  background-color: #475b60; /*TODO: change*/
+}
+
+.dark-mode .feedback-form-button:hover {
+  background-color: var(--dark-green); /*TODO: change*/
 }
 
 .back-button {
-  color: #333; /* Dark text */
-  border: 2px solid #ccc; /* Light border */
   border-radius: 5px;
   padding: 10px 20px;
   font-size: 16px;
@@ -1041,19 +1044,44 @@ z-index: -1;
 .light-mode .back-button {
   background-color:  var(--light-start-bg); /* Light background */
   color: var(--dark-accent);
+  border:none; 
+
 }
 
 .dark-mode .back-button {
-  background-color:  var(--light-start-bg); /* Light background */
-  color: var(--dark-accent);
+  background-color: rgba(0, 0, 0, 0.431);
+  border:none; 
+  color: var(--light-start-bg)
 }
 
-.back-button:hover {
+.light-mode .back-button:hover {
   background-color: #ddd; /* Darker background on hover */
   border-color: #bbb; /* Darker border on hover */
+}
+
+.dark-mode .back-button:hover {
+  background-color: #0000008a; /* Darker background on hover */
 }
 
 .back-button:focus {
   outline: none;
   box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.3); /* Focus outline */
 }
+
+/* Other existing styles */
+
+/* Style for error messages */
+.error-message {
+  display: block;
+  font-size: 12px; /* Adjust the font size as needed */
+  margin-top: 5px; /* Adjust spacing as needed */
+}
+
+.light-mode .error-message {
+  color: #000000; /* Change this to your desired color */
+}
+
+.dark-mode .error-message {
+  color: red;
+}
+
