@@ -1003,6 +1003,14 @@ z-index: -1;
   resize: vertical;
 }
 
+.dark-mode .feedback-form-textarea, .feedback-form-input {
+  background-color: var(--light-bg);
+}
+
+.light-mode .feedback-form-textarea, .feedback-form-input {
+  background-color: var(--light-bg);
+}
+
 .feedback-form-button {
   padding: 0.75rem;
   border: none;
