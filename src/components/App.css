@@ -86,9 +86,7 @@
 }
 
 .header {
-  margin-left: 50px;
   margin-top: 20px;
-  margin-right: 50px;
   border-radius: 10px;
   font-family: 'Courier New', Courier, monospace;
   padding: 10px;
@@ -166,6 +164,7 @@
   position: relative;
   height: 30px; 
 }
+
 
 .footer { /*Footer style*/
   margin: 50px;
@@ -866,7 +865,7 @@ z-index: -1;
 /* Feedback icon styling */
 .feedback-icon {
   margin-left: 16px;
-  font-size: 1.5rem; /* Adjust size as needed */
+  font-size: 1.2rem; /* Adjust size as needed */
   color: var(--icon-color); /* Set your icon color */
   cursor: pointer;
   position: relative;

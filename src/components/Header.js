@@ -39,7 +39,9 @@ const Header = ({ darkMode, toggleDarkMode }) => {
           className="feedback-icon"
           title="Find a bug? Leave feedback!"
         >
-          <FaRegCommentAlt />
+          <div className="comment">
+            <FaRegCommentAlt />
+          </div>
         </Link>
       </div>
     </header>

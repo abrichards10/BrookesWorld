@@ -27,7 +27,7 @@ const Home = () => {
         animate={{ opacity: 1 }}
         transition={{ duration: 4 }}
       >
-        <br />I am a teacher, mentor, and software engineer, in that order.
+        <br />I am a teacher, mentor, and software engineer!
       </motion.h5>
       {/* Add more content here */}
     </div>
