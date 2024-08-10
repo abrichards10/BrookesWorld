@@ -893,25 +893,33 @@ z-index: -1;
   visibility: visible;
 }
 
-
 .feedback-form-container {
   max-width: 600px;
   margin: 2rem auto;
   padding: 1rem;
-  background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dark-mode .feedback-form-container {
+  background-color: rgba(0, 0, 0, 0.431);
+  color: var(--dark-text);
+}
+
+.light-mode .feedback-form-container {
+  background-color: var(--light-accent);
+  color: var(--dark-text);
 }
 
 .feedback-form-title {
   text-align: center;
   margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
   font-size: 2rem;
-  color: #333;
 }
 
 .feedback-form-sub {
-  text-align: center;
+  text-align: center;  
 }
 
 .feedback-form {
@@ -925,13 +933,6 @@ z-index: -1;
   margin-right: 10px;
   margin: 0.5rem 0;
   font-size: 1rem;
-  color: #555;
-}
-
-.feedback-form-label::after {
-  content: "*";
-  color: red;
-  margin-left: 5px;
 }
 
 .feedback-form-label.required {
@@ -942,6 +943,14 @@ z-index: -1;
   content: "*";
   color: red;
   margin-left: 5px;
+}
+
+.light-mode .feedback-form-label.required::after {
+  color: orange;
+}
+
+.dark-mode .feedback-form-label.required::after {
+  color: rgba(255, 255, 255, 0.688);
 }
 
 .tooltipForm {
@@ -997,11 +1006,19 @@ z-index: -1;
   padding: 0.75rem;
   border: none;
   border-radius: 4px;
-  background-color: var(--light-accent);
-  color: #fff;
   font-size: 1rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
+}
+
+.light-mode .feedback-form-button {
+  background-color: var(--dark-accent);
+  color: var(--dark-text);
+}
+
+.dark-mode .feedback-form-button {
+  background-color: var(--dark-accent);
+  color: var(--dark-text);
 }
 
 .feedback-form-button:hover {
@@ -1009,7 +1026,6 @@ z-index: -1;
 }
 
 .back-button {
-  background-color: #f5f5f5; /* Light background */
   color: #333; /* Dark text */
   border: 2px solid #ccc; /* Light border */
   border-radius: 5px;
@@ -1020,6 +1036,16 @@ z-index: -1;
   margin-top: 20px;
   display: inline-flex;
   align-items: center;
+}
+
+.light-mode .back-button {
+  background-color:  var(--light-start-bg); /* Light background */
+  color: var(--dark-accent);
+}
+
+.dark-mode .back-button {
+  background-color:  var(--light-start-bg); /* Light background */
+  color: var(--dark-accent);
 }
 
 .back-button:hover {
