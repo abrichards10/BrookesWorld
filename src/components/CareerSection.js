@@ -56,7 +56,7 @@ const CareerSection = () => {
           <li>💪 Sheer, raw commitment and ownership of their work</li>
           <li>
             🚀 Enthusiasm for experimenting and talking to users, and then
-            experimenting with the users.
+            experimenting with the user data.
           </li>
           <li>🚌 Being in-person dear lord please get me out of this house.</li>
         </ul>

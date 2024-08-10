@@ -48,8 +48,6 @@
 
 .light-mode .header {
   background-color: var(--light-accent);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, .3);
-
 }
 
 .light-mode .footer {
@@ -1000,7 +998,7 @@ z-index: -1;
   padding: 0.75rem;
   border: none;
   border-radius: 4px;
-  background-color: #007bff;
+  background-color: var(--light-accent);
   color: #fff;
   font-size: 1rem;
   cursor: pointer;
@@ -1008,5 +1006,29 @@ z-index: -1;
 }
 
 .feedback-form-button:hover {
-  background-color: #0056b3;
+  background-color: var(--light-accent); /*TODO: change*/
+}
+
+.back-button {
+  background-color: #f5f5f5; /* Light background */
+  color: #333; /* Dark text */
+  border: 2px solid #ccc; /* Light border */
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+  margin-top: 20px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.back-button:hover {
+  background-color: #ddd; /* Darker background on hover */
+  border-color: #bbb; /* Darker border on hover */
+}
+
+.back-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.3); /* Focus outline */
 }
