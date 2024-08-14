@@ -17,7 +17,6 @@
   transition: background 0.5s ease; 
   background: var(--light-bg); 
   font-family: 'Courier New', Courier, monospace;
-
 }
 
 :root {
@@ -52,9 +51,7 @@
 
 .light-mode .footer {
   /* background-color: var(--light-bg); */
-  margin-left: 50px;
   margin-bottom: 20px;
-  margin-right: 50px;
   border-radius: 10px;
 }
 
@@ -167,7 +164,6 @@
 
 
 .footer { /*Footer style*/
-  margin: 50px;
   border-radius: 10px;
   padding: 20px;
   background-color: #e0f5ff; /* Adjust based on your theme */
@@ -378,6 +374,10 @@
 
 .titles-app { /*MOBILE APP DEV TEXT*/
   margin-bottom: 50px;
+  text-align: center;
+}
+
+.sub-side-title {
   text-align: center;
 }
 
@@ -832,8 +832,8 @@ z-index: -1;
   color: #fff;
   border: none;
   border-radius: 10px;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -889,6 +889,7 @@ z-index: -1;
 }
 
 .feedback-icon:hover::after {
+  margin-top: 200px;
   opacity: 1;
   visibility: visible;
 }
@@ -1092,4 +1093,5 @@ z-index: -1;
 .dark-mode .error-message {
   color: red;
 }
+
 

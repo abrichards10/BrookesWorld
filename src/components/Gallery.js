@@ -62,6 +62,10 @@ const Gallery = () => {
   return (
     <div className="gallery-container">
       <h3 className="titles">Side Projects</h3>
+      <h6 className="sub-side-title">
+        Ooh boy well… I tend to be one of those people who gets really bored
+        with no work to do.{" "}
+      </h6>
       <div className="gallery">
         {projects.map((project, index) => (
           <div key={index} className="gallery-item">

@@ -11,7 +11,7 @@ import pic2 from "./assets/Witches2.png";
 import career1 from "./assets/Career_Chatter1.png";
 import career2 from "./assets/Career_Chatter2.png";
 import career3 from "./assets/Career_Chatter3.png";
-import Magnifier from "react-magnifier";
+import ImageMagnifier from "./ImageMagnifier";
 
 const CarouselComponent = () => {
   return (
@@ -21,36 +21,90 @@ const CarouselComponent = () => {
         <Carousel.Item>
           <Row>
             <Col xs={1} md={4} className="d-flex justify-content-center">
-              <Magnifier src={gif1} />
+              <ImageMagnifier
+                src={gif1}
+                alt="Pocket Python 1"
+                width={200}
+                height={"auto"}
+              />
             </Col>
             <Col xs={12} md={4} className="d-flex justify-content-center">
-              <Magnifier src={gif2} width={500} />
+              <ImageMagnifier
+                src={gif2}
+                imageAlt="Pocket Python 2"
+                width={200}
+                height={"auto"}
+                magnifierHeight={100}
+                magnifierWidth={100}
+              />
             </Col>
             <Col xs={12} md={4} className="d-flex justify-content-center">
-              <Magnifier src={gif3} width={500} />
+              <ImageMagnifier
+                src={gif3}
+                imageAlt="Pocket Python 3"
+                width={200}
+                height={"auto"}
+                magnifierHeight={100}
+                magnifierWidth={100}
+              />
             </Col>
           </Row>
         </Carousel.Item>
         <Carousel.Item>
           <Row className="d-flex justify-content-center align-items-center h-100">
             <Col xs={12} md={4} className="d-flex justify-content-center">
-              <Magnifier src={pic1} width={500} />
+              <ImageMagnifier
+                src={pic1}
+                imageAlt="Witches 1"
+                width={200}
+                height={"auto"}
+                magnifierHeight={100}
+                magnifierWidth={100}
+              />
             </Col>
             <Col xs={12} md={4} className="d-flex justify-content-center">
-              <Magnifier src={pic2} width={500} />
+              <ImageMagnifier
+                src={pic2}
+                imageAlt="Witches 2"
+                width={200}
+                height={"auto"}
+                magnifierHeight={100}
+                magnifierWidth={100}
+              />
             </Col>
           </Row>
         </Carousel.Item>
         <Carousel.Item>
           <Row>
             <Col xs={12} md={4} className="d-flex justify-content-center">
-              <Magnifier src={career1} width={500} />
+              <ImageMagnifier
+                src={career1}
+                imageAlt="Career Chatter 1"
+                width={200}
+                height={"auto"}
+                magnifierHeight={100}
+                magnifierWidth={100}
+              />
             </Col>
             <Col xs={12} md={4} className="d-flex justify-content-center">
-              <Magnifier src={career2} width={500} />
+              <ImageMagnifier
+                src={career2}
+                imageAlt="Career Chatter 2"
+                width={200}
+                height={"auto"}
+                magnifierHeight={100}
+                magnifierWidth={100}
+              />
             </Col>
             <Col xs={12} md={4} className="d-flex justify-content-center">
-              <Magnifier src={career3} width={500} />
+              <ImageMagnifier
+                src={career3}
+                imageAlt="Career Chatter 3"
+                width={200}
+                height={"auto"}
+                magnifierHeight={100}
+                magnifierWidth={100}
+              />
             </Col>
           </Row>
         </Carousel.Item>
