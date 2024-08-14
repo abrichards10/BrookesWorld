@@ -34,8 +34,6 @@ const CarouselComponent = () => {
                 imageAlt="Pocket Python 2"
                 width={200}
                 height={"auto"}
-                magnifierHeight={100}
-                magnifierWidth={100}
               />
             </Col>
             <Col xs={12} md={4} className="d-flex justify-content-center">
@@ -44,8 +42,6 @@ const CarouselComponent = () => {
                 imageAlt="Pocket Python 3"
                 width={200}
                 height={"auto"}
-                magnifierHeight={100}
-                magnifierWidth={100}
               />
             </Col>
           </Row>
@@ -58,8 +54,6 @@ const CarouselComponent = () => {
                 imageAlt="Witches 1"
                 width={200}
                 height={"auto"}
-                magnifierHeight={100}
-                magnifierWidth={100}
               />
             </Col>
             <Col xs={12} md={4} className="d-flex justify-content-center">
@@ -68,8 +62,6 @@ const CarouselComponent = () => {
                 imageAlt="Witches 2"
                 width={200}
                 height={"auto"}
-                magnifierHeight={100}
-                magnifierWidth={100}
               />
             </Col>
           </Row>
@@ -82,8 +74,6 @@ const CarouselComponent = () => {
                 imageAlt="Career Chatter 1"
                 width={200}
                 height={"auto"}
-                magnifierHeight={100}
-                magnifierWidth={100}
               />
             </Col>
             <Col xs={12} md={4} className="d-flex justify-content-center">
@@ -92,8 +82,6 @@ const CarouselComponent = () => {
                 imageAlt="Career Chatter 2"
                 width={200}
                 height={"auto"}
-                magnifierHeight={100}
-                magnifierWidth={100}
               />
             </Col>
             <Col xs={12} md={4} className="d-flex justify-content-center">
@@ -102,8 +90,6 @@ const CarouselComponent = () => {
                 imageAlt="Career Chatter 3"
                 width={200}
                 height={"auto"}
-                magnifierHeight={100}
-                magnifierWidth={100}
               />
             </Col>
           </Row>
