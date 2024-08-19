@@ -13,27 +13,28 @@ const CareerSection = () => {
             world while making friends at the same time.
           </li>
           <li>
-            Opportunities to lead and own projects, mentor team members, and
-            learn from people smarter than me.
+            Opportunities to lead and own projects, mentor and be mentored by
+            team members, and learn from people smarter than me.
           </li>
           <li>
             Positions where I can work on challenging problems and contribute to
-            products that will help people and companies succeed.
+            products that will help people and products succeed.
           </li>
           <li>
-            Room for professional growth, personal growth, and access to coffee.
+            Room for professional growth, personal growth, and a coffee maker.
           </li>
         </ul>
         <br />
         <h2>What I Can Offer</h2>
         <ul>
           <li>
-            Expertise in front-end development with a strong background in
-            Flutter, JavaScript, and mobile app development.
+            Expertise in front-end development with a particularly strong
+            background in Flutter, Python JavaScript, and mobile app
+            development.
           </li>
           <li>
-            Proven track record of leading engineering teams, mentoring team
-            members, and managing project workflows.
+            Proven track record of working within teams, leading engineering
+            teams, mentoring team members, and managing project workflows.
           </li>
           <li>
             Experience in hosting engaging hackathons, reviewing code, and
