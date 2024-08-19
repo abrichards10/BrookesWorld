@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/brookes-world/static/css/main.ec0a534d.css",
-    "main.js": "/brookes-world/static/js/main.2f20b577.js",
+    "main.js": "/brookes-world/static/js/main.5927a7f5.js",
     "static/js/488.c081e459.chunk.js": "/brookes-world/static/js/488.c081e459.chunk.js",
     "static/media/BrookeLook.jpeg": "/brookes-world/static/media/BrookeLook.3c90f992f189e70bace9.jpeg",
     "static/media/Pocket_Python2.gif": "/brookes-world/static/media/Pocket_Python2.cfdb39beb88f1a1726e5.gif",
@@ -26,11 +26,11 @@
     "static/media/rachel.jpg": "/brookes-world/static/media/rachel.2b49c7a7f04822f5666b.jpg",
     "index.html": "/brookes-world/index.html",
     "main.ec0a534d.css.map": "/brookes-world/static/css/main.ec0a534d.css.map",
-    "main.2f20b577.js.map": "/brookes-world/static/js/main.2f20b577.js.map",
+    "main.5927a7f5.js.map": "/brookes-world/static/js/main.5927a7f5.js.map",
     "488.c081e459.chunk.js.map": "/brookes-world/static/js/488.c081e459.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ec0a534d.css",
-    "static/js/main.2f20b577.js"
+    "static/js/main.5927a7f5.js"
   ]
 }
